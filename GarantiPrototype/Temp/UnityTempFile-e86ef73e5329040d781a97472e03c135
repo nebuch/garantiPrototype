@@ -107,6 +107,6 @@
 'Assets/OVR/Scripts/Util/OVRScreenFade.cs'
 'Assets/OVR/Scripts/Util/OVRTrackerBounds.cs'
 'Assets/VRMouseLook.cs'
-'Assets/raycast2.cs'
+'Assets/raycastMobileVR.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'

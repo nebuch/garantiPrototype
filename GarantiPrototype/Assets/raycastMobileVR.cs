@@ -13,6 +13,7 @@ public class raycastMobileVR : MonoBehaviour {
 	
 
 	void Start () {	
+		fadeToWhite.GetComponent<Animator>().Stop();
 	} // end of Start()
 	
 	
@@ -45,13 +46,12 @@ public class raycastMobileVR : MonoBehaviour {
 			*/
 
 			if (hit.transform.tag == "door") {
-				Debug.Log("raycast hits door");
+				//Debug.Log("raycast hits door");
 				if (Input.GetKey("space")) {
 					Debug.Log("space bar pressed");
-					if (hit.transform.GetComponent<Animation>()) {				// check to ensure that the object has an animation attached
-						hit.transform.GetComponent<Animation>().Play();
-						fadeToWhite.GetComponent<Animation>().Play();
-					}
+					hit.transform.GetComponent<Animation>().Play();
+					//fadeToWhite.GetComponent<Animator>().Play("fade-to-white-3");  // does not work!
+					//fadeToWhite.GetComponent<Animator>().PlayInFixedTime("fade-to-white-3");  // also does not work
 				}
 			}
 		} // end of Raycast
