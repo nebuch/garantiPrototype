@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: door hinge
+  m_Name: door right
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -19,20 +19,20 @@ AnimationClip:
       - time: 0
         value: {x: 0, y: 0, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: Infinity, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - time: 0.6
         value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 0, y: 18.520918, z: 0}
-        outSlope: {x: 0, y: 37.041832, z: -0}
+        inSlope: {x: 0, y: -18.52041, z: 0}
+        outSlope: {x: 0, y: -37.040817, z: 0}
         tangentMode: 0
       - time: 3.8666666
-        value: {x: -0, y: 121.00332, z: 0}
-        inSlope: {x: 0, y: 37.041832, z: 0}
-        outSlope: {x: 0, y: -0, z: 0}
+        value: {x: 0, y: -121, z: 0}
+        inSlope: {x: 0, y: -37.040817, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - time: 6
-        value: {x: 0, y: 121.00332, z: 0}
+        value: {x: 0, y: -121, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -93,7 +93,7 @@ AnimationClip:
         outSlope: 0
         tangentMode: 10
       - time: 3.8666666
-        value: -0
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 10
@@ -115,20 +115,20 @@ AnimationClip:
       - time: 0
         value: 0
         inSlope: 0
-        outSlope: Infinity
-        tangentMode: 25
+        outSlope: 0
+        tangentMode: 0
       - time: 0.6
         value: 0
-        inSlope: 18.520918
-        outSlope: 37.041832
+        inSlope: -18.52041
+        outSlope: -37.040817
         tangentMode: 17
       - time: 3.8666666
-        value: 121.00332
-        inSlope: 37.041832
-        outSlope: -0
-        tangentMode: 21
+        value: -121
+        inSlope: -37.040817
+        outSlope: 0
+        tangentMode: 5
       - time: 6
-        value: 121.00332
+        value: -121
         inSlope: 0
         outSlope: 0
         tangentMode: 10
@@ -146,12 +146,12 @@ AnimationClip:
         value: 0
         inSlope: 0
         outSlope: 0
-        tangentMode: 0
+        tangentMode: 10
       - time: 0.6
         value: 0
         inSlope: 0
-        outSlope: -0
-        tangentMode: 17
+        outSlope: 0
+        tangentMode: 10
       - time: 3.8666666
         value: 0
         inSlope: 0
