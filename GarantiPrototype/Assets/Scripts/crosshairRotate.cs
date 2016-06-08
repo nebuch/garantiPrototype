@@ -18,7 +18,7 @@ public class crosshairRotate : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		_image.rotation = Quaternion.Euler (0, 0, _rotationZ);
+		_image.localRotation = Quaternion.Euler (0, 0, _rotationZ);
 
 		_rotationZ += _speed * Time.unscaledDeltaTime;
 	}
