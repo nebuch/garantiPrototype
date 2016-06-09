@@ -60,7 +60,7 @@ public class raycastMobileVR : MonoBehaviour {
 					//fadeToWhite.GetComponent<Animator>().PlayInFixedTime("fade-to-white-3");  // also does not work
 					audioDoor.GetComponent<AudioSource>().Play();
 					audioAngels.GetComponent<AudioSource>().Play();
-					Invoke ("LoadScene", 3f);
+					Invoke ("LoadScene", 4f);
 				}
 			}
 		} // end of Raycast
