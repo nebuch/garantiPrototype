@@ -7,6 +7,9 @@ public class raycastMobileVR : MonoBehaviour {
 	private RaycastHit hit;
 	public Transform fadeToWhite;
 	private string doorName;
+	public Transform audioDoor;
+	public Transform audioAngels;
+	private bool doorHasBeenClicked = false;
 
 	// unused? 
 	//private float newHitTime;
@@ -47,14 +50,16 @@ public class raycastMobileVR : MonoBehaviour {
 			} 
 			*/
 
-			if (hit.transform.tag == "door") {
-				//Debug.Log("raycast hits door");
+			if (hit.transform.tag == "door" && doorHasBeenClicked == false) {
 				doorName = hit.transform.name;
 				if (Input.GetKey("space") || Input.GetMouseButton(0)) {
 					Debug.Log("CLICK! on DOOR");
+					doorHasBeenClicked = true;
 					hit.transform.GetComponent<Animation>().Play();
 					//fadeToWhite.GetComponent<Animator>().Play("fade-to-white-3");  // does not work!
 					//fadeToWhite.GetComponent<Animator>().PlayInFixedTime("fade-to-white-3");  // also does not work
+					audioDoor.GetComponent<AudioSource>().Play();
+					audioAngels.GetComponent<AudioSource>().Play();
 					Invoke ("LoadScene", 3f);
 				}
 			}
