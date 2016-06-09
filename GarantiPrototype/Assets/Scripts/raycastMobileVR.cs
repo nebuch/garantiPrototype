@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class raycastMobileVR : MonoBehaviour {
 
 	private RaycastHit hit;
 	public Transform fadeToWhite;
+	private string doorName;
 
 	// unused? 
 	//private float newHitTime;
@@ -47,13 +49,21 @@ public class raycastMobileVR : MonoBehaviour {
 
 			if (hit.transform.tag == "door") {
 				//Debug.Log("raycast hits door");
+				doorName = hit.transform.name;
 				if (Input.GetKey("space") || Input.GetMouseButton(0)) {
 					Debug.Log("CLICK! on DOOR");
 					hit.transform.GetComponent<Animation>().Play();
 					//fadeToWhite.GetComponent<Animator>().Play("fade-to-white-3");  // does not work!
 					//fadeToWhite.GetComponent<Animator>().PlayInFixedTime("fade-to-white-3");  // also does not work
+					Invoke ("LoadScene", 3f);
 				}
 			}
 		} // end of Raycast
 	} // end of Update()
+
+	void LoadScene () {
+		if (doorName == "Door To Apartment") {
+			SceneManager.LoadScene("Apartment");
+		}
+	} // end of LoadScene()
 }
