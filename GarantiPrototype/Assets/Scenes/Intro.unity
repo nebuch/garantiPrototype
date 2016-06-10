@@ -100,6 +100,7 @@ GameObject:
   - 95: {fileID: 176920123}
   - 65: {fileID: 176920122}
   - 111: {fileID: 176920121}
+  - 114: {fileID: 176920124}
   m_Layer: 0
   m_Name: Door To Apartment
   m_TagString: door
@@ -165,6 +166,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &176920124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 176920119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeToWhite: {fileID: 0}
+  _doorDestination: Apartment
+  audioDoor: {fileID: 0}
+  audioAngels: {fileID: 0}
 --- !u!1 &263095263
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,8 +192,9 @@ GameObject:
   - 33: {fileID: 263095266}
   - 65: {fileID: 263095265}
   - 23: {fileID: 263095264}
+  - 114: {fileID: 263095268}
   m_Layer: 0
-  m_Name: door2
+  m_Name: Door To Unlocked Film
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -241,6 +258,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1450858368}
   m_RootOrder: 4
+--- !u!114 &263095268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 263095263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeToWhite: {fileID: 0}
+  _doorDestination: Unlocked
+  audioDoor: {fileID: 0}
+  audioAngels: {fileID: 0}
 --- !u!1 &354824498 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
@@ -273,6 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeToWhite: {fileID: 361188611}
+  _doorDestination: 
   audioDoor: {fileID: 1423409229}
   audioAngels: {fileID: 1542671918}
 --- !u!1 &361188610
@@ -1026,8 +1059,9 @@ GameObject:
   - 33: {fileID: 1074623940}
   - 65: {fileID: 1074623939}
   - 23: {fileID: 1074623938}
+  - 114: {fileID: 1074623942}
   m_Layer: 0
-  m_Name: door6
+  m_Name: Door To Cinema
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1091,6 +1125,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1450858368}
   m_RootOrder: 0
+--- !u!114 &1074623942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1074623937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeToWhite: {fileID: 0}
+  _doorDestination: Cinema
+  audioDoor: {fileID: 0}
+  audioAngels: {fileID: 0}
 --- !u!1 &1423409227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,8 +1545,9 @@ GameObject:
   - 33: {fileID: 1909324988}
   - 65: {fileID: 1909324987}
   - 23: {fileID: 1909324986}
+  - 114: {fileID: 1909324990}
   m_Layer: 0
-  m_Name: door5
+  m_Name: Door To Garage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1561,6 +1611,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1450858368}
   m_RootOrder: 1
+--- !u!114 &1909324990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1909324985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeToWhite: {fileID: 0}
+  _doorDestination: Garage
+  audioDoor: {fileID: 0}
+  audioAngels: {fileID: 0}
 --- !u!1 &1935831911
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,6 +1637,7 @@ GameObject:
   - 95: {fileID: 1935831913}
   - 65: {fileID: 1935831914}
   - 111: {fileID: 1935831915}
+  - 114: {fileID: 1935831916}
   m_Layer: 0
   m_Name: Door To Flying
   m_TagString: door
@@ -1637,6 +1703,21 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &1935831916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1935831911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeToWhite: {fileID: 0}
+  _doorDestination: Flying
+  audioDoor: {fileID: 0}
+  audioAngels: {fileID: 0}
 --- !u!1 &1959398040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1724,8 +1805,9 @@ GameObject:
   - 33: {fileID: 1970396915}
   - 65: {fileID: 1970396914}
   - 23: {fileID: 1970396913}
+  - 114: {fileID: 1970396917}
   m_Layer: 0
-  m_Name: door1
+  m_Name: Door To Bank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1789,3 +1871,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1450858368}
   m_RootOrder: 5
+--- !u!114 &1970396917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970396912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeToWhite: {fileID: 0}
+  _doorDestination: Bank
+  audioDoor: {fileID: 0}
+  audioAngels: {fileID: 0}
