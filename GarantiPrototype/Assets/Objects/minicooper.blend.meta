@@ -161,6 +161,8 @@ ModelImporter:
     2300094: vipers_001
     2300096: whitelight_cover
     2300098: windows
+    2300100: car_body
+    2300102: outliner_chrome
     3300000: brake_2
     3300002: brake_3
     3300004: brakes
@@ -211,6 +213,8 @@ ModelImporter:
     3300094: vipers_001
     3300096: whitelight_cover
     3300098: windows
+    3300100: car_body
+    3300102: outliner_chrome
     4300000: vipers_001
     4300002: mini_logo
     4300004: car_body_2
@@ -261,6 +265,8 @@ ModelImporter:
     4300094: brakes
     4300096: tires
     4300098: vipers
+    4300100: car_body
+    4300102: outliner_chrome
     7400000: Default Take
     9500000: //RootNode
   materials:
