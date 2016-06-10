@@ -174,13 +174,86 @@ MonoBehaviour:
   m_GameObject: {fileID: 176920119}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 84adafb2fac250a41ba730a5f637365d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeToWhite: {fileID: 0}
-  _doorDestination: Apartment
-  audioDoor: {fileID: 0}
-  audioAngels: {fileID: 0}
+  _toGoScene: 41706172746d656e74
+--- !u!1 &259775281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 259775285}
+  - 33: {fileID: 259775284}
+  - 64: {fileID: 259775283}
+  - 23: {fileID: 259775282}
+  m_Layer: 0
+  m_Name: floorTron (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &259775282
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 259775281}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 1f16f687f29636245bc96e500576a431, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!64 &259775283
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 259775281}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &259775284
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 259775281}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &259775285
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 259775281}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.5, z: 0}
+  m_LocalScale: {x: 100, y: 1, z: 100}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
 --- !u!1 &263095263
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,13 +339,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 263095263}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 84adafb2fac250a41ba730a5f637365d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeToWhite: {fileID: 0}
-  _doorDestination: Unlocked
-  audioDoor: {fileID: 0}
-  audioAngels: {fileID: 0}
+  _toGoScene: 556e6c6f636b6564
 --- !u!1 &354824498 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
@@ -293,6 +363,12 @@ MonoBehaviour:
   autoRecenterRoll: 1
   HorizontalAndVerticalKey: 308
   RollKey: 306
+  vrCameraTransform: {fileID: 0}
+  rotationTransform: {fileID: 0}
+  forwardTransform: {fileID: 0}
+  mouseX: 0
+  mouseY: 0
+  mouseZ: 0
 --- !u!114 &354824503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,9 +381,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeToWhite: {fileID: 361188611}
+  doorName: 
   _doorDestination: 
   audioDoor: {fileID: 1423409229}
   audioAngels: {fileID: 1542671918}
+  doorHasBeenClicked: 0
 --- !u!1 &361188610
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,6 +974,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 50
+  _zRotation: 0
+  _image: {fileID: 0}
 --- !u!1 &873079911
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,13 +1213,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1074623937}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 84adafb2fac250a41ba730a5f637365d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeToWhite: {fileID: 0}
-  _doorDestination: Cinema
-  audioDoor: {fileID: 0}
-  audioAngels: {fileID: 0}
+  _toGoScene: 43696e656d61
 --- !u!1 &1423409227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,7 +1546,7 @@ GameObject:
   - 33: {fileID: 1695600203}
   - 64: {fileID: 1695600202}
   - 23: {fileID: 1695600201}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: floorTron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1534,6 +1611,80 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1 &1873123908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1873123910}
+  - 108: {fileID: 1873123909}
+  - 114: {fileID: 1873123911}
+  m_Layer: 4
+  m_Name: Spotlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1873123909
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1873123908}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 0
+  m_Color: {r: 1, g: 0.46323532, b: 0.98519284, a: 1}
+  m_Intensity: 8
+  m_Range: 39.05
+  m_SpotAngle: 32.3
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 16
+  m_Lightmapping: 1
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &1873123910
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1873123908}
+  m_LocalRotation: {x: 0.7071067, y: -1.4210855e-14, z: -1.4210855e-14, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 3.77, z: 5}
+  m_LocalScale: {x: 100, y: 1, z: 100}
+  m_LocalEulerAnglesHint: {x: 90, y: -180, z: -180}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+--- !u!114 &1873123911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1873123908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b589163214f7bbf4296f4d4611df0716, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1909324985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,6 +1696,7 @@ GameObject:
   - 33: {fileID: 1909324988}
   - 65: {fileID: 1909324987}
   - 23: {fileID: 1909324986}
+  - 111: {fileID: 1909324991}
   - 114: {fileID: 1909324990}
   m_Layer: 0
   m_Name: Door To Garage
@@ -1619,13 +1771,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1909324985}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 84adafb2fac250a41ba730a5f637365d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeToWhite: {fileID: 0}
-  _doorDestination: Garage
-  audioDoor: {fileID: 0}
-  audioAngels: {fileID: 0}
+  _toGoScene: 476172616765
+--- !u!111 &1909324991
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1909324985}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 4203597db32764b209f0e8fc9d183fef, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 4203597db32764b209f0e8fc9d183fef, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1935831911
 GameObject:
   m_ObjectHideFlags: 0
@@ -1711,13 +1875,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1935831911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 84adafb2fac250a41ba730a5f637365d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeToWhite: {fileID: 0}
-  _doorDestination: Flying
-  audioDoor: {fileID: 0}
-  audioAngels: {fileID: 0}
+  _toGoScene: 466c79696e67
 --- !u!1 &1959398040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,10 +2040,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1970396912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 84adafb2fac250a41ba730a5f637365d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeToWhite: {fileID: 0}
-  _doorDestination: Bank
-  audioDoor: {fileID: 0}
-  audioAngels: {fileID: 0}
+  _toGoScene: 42616e6b

@@ -7,7 +7,7 @@ public class raycastMobileVR : MonoBehaviour {
 	private RaycastHit hit;
 	public Transform fadeToWhite;
 	private string doorName;
-	public string _doorDestination;
+	private string _doorDestination;
 	public Transform audioDoor;
 	public Transform audioAngels;
 	private bool doorHasBeenClicked = false;
@@ -53,6 +53,7 @@ public class raycastMobileVR : MonoBehaviour {
 
 			if (hit.transform.tag == "door" && doorHasBeenClicked == false) {
 				//doorName = hit.transform.name;
+				_doorDestination = hit.transform.gameObject.GetComponent<doorToGo>()._toGoScene;
 				if (Input.GetKey("space") || Input.GetMouseButton(0)) {
 					Debug.Log("CLICK! on DOOR");
 					doorHasBeenClicked = true;
