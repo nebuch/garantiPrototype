@@ -502,6 +502,7 @@ MonoBehaviour:
   fadeToWhite: {fileID: 361188611}
   audioDoor: {fileID: 1423409229}
   audioAngels: {fileID: 1542671918}
+  fadeout: {fileID: 460845271}
 --- !u!1 &361188610
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,6 +896,19 @@ MonoBehaviour:
   LensDirtIntensity: 0
   ChromaticAberration: 0
   ChromaticAberrationOffset: 1
+--- !u!114 &460845271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460845267}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7358657a63d48fd4fb4554fdac997c2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTime: 2
+  fadeColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!114 &460845273
 MonoBehaviour:
   m_ObjectHideFlags: 0

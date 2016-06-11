@@ -12,6 +12,8 @@ public class raycastMobileVR : MonoBehaviour {
 	public Transform audioAngels;
 	private bool doorHasBeenClicked = false;
 
+    public ScreenFadeOut fadeout;
+
 	// unused? 
 	//private float newHitTime;
 	//private Transform lastHit;
@@ -62,11 +64,17 @@ public class raycastMobileVR : MonoBehaviour {
 					//fadeToWhite.GetComponent<Animator>().PlayInFixedTime("fade-to-white-3");  // also does not work
 					audioDoor.GetComponent<AudioSource>().Play();
 					audioAngels.GetComponent<AudioSource>().Play();
+                    Invoke("StartFadeOut",1f);
 					Invoke ("LoadScene", 4f);
 				}
 			}
 		} // end of Raycast
 	} // end of Update()
+
+    void StartFadeOut()
+    {
+        fadeout.GetComponent<ScreenFadeOut>().enabled = true;
+    }
 
 	void LoadScene () {
 		

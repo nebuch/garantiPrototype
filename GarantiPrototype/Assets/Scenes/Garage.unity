@@ -458,6 +458,7 @@ MonoBehaviour:
   fadeToWhite: {fileID: 361188611}
   audioDoor: {fileID: 0}
   audioAngels: {fileID: 0}
+  fadeout: {fileID: 0}
 --- !u!1 &361188610
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,6 +843,19 @@ MonoBehaviour:
   useDepthTexture: 1
   sunShaftsShader: {fileID: 4800000, guid: d3b1c8c1036784176946f5cfbfb7fe4c, type: 3}
   simpleClearShader: {fileID: 4800000, guid: f688f89ed5eb847c5b19c934a0f1e772, type: 3}
+--- !u!114 &460845274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460845267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d4151bc08cb0174d89ae1d1812c35e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTime: 2
+  fadeColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &468787626
 GameObject:
   m_ObjectHideFlags: 0
