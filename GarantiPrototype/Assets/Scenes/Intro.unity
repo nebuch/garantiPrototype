@@ -2768,7 +2768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84adafb2fac250a41ba730a5f637365d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _toGoScene: Cinema
+  _toGoScene: FlyingFromGalata
 --- !u!1 &1959398040
 GameObject:
   m_ObjectHideFlags: 0

@@ -166,6 +166,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11438738, guid: 9201932c98de04e489a288113bffb1ba, type: 2}
+      propertyPath: m_strFileName
+      value: 360 Video.mp4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9201932c98de04e489a288113bffb1ba, type: 2}
   m_IsPrefabParent: 0
