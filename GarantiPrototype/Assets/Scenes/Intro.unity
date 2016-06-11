@@ -226,7 +226,7 @@ Transform:
   m_Children:
   - {fileID: 873079912}
   m_Father: {fileID: 1450858368}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!111 &176920121
 Animation:
   m_ObjectHideFlags: 0
@@ -1117,7 +1117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84adafb2fac250a41ba730a5f637365d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _toGoScene: Flying
+  _toGoScene: Cinema
 --- !u!111 &528804549
 Animation:
   m_ObjectHideFlags: 0
@@ -1194,7 +1194,7 @@ Transform:
   m_Children:
   - {fileID: 459391759}
   m_Father: {fileID: 1450858368}
-  m_RootOrder: 5
+  m_RootOrder: 3
 --- !u!114 &587982940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1993,10 +1993,10 @@ Transform:
   - {fileID: 1672908729}
   - {fileID: 1959398044}
   - {fileID: 1802409954}
-  - {fileID: 1935831912}
-  - {fileID: 176920120}
   - {fileID: 587982939}
   - {fileID: 2115561621}
+  - {fileID: 176920120}
+  - {fileID: 1935831912}
   - {fileID: 528804547}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -2712,7 +2712,7 @@ Transform:
   m_Children:
   - {fileID: 1031024296}
   m_Father: {fileID: 1450858368}
-  m_RootOrder: 3
+  m_RootOrder: 6
 --- !u!95 &1935831913
 Animator:
   serializedVersion: 3
@@ -2768,7 +2768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84adafb2fac250a41ba730a5f637365d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _toGoScene: Flying
+  _toGoScene: Cinema
 --- !u!1 &1959398040
 GameObject:
   m_ObjectHideFlags: 0
@@ -2986,7 +2986,7 @@ Transform:
   m_Children:
   - {fileID: 85567133}
   m_Father: {fileID: 1450858368}
-  m_RootOrder: 6
+  m_RootOrder: 4
 --- !u!114 &2115561622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2998,7 +2998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84adafb2fac250a41ba730a5f637365d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _toGoScene: Flying
+  _toGoScene: Garage
 --- !u!111 &2115561623
 Animation:
   m_ObjectHideFlags: 0
