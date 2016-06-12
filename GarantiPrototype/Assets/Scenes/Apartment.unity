@@ -467,7 +467,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1999811716}
-  m_RootOrder: 58
+  m_RootOrder: 57
 --- !u!1001 &163660816
 Prefab:
   m_ObjectHideFlags: 0
@@ -975,7 +975,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 89.980194, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1999811716}
-  m_RootOrder: 84
+  m_RootOrder: 72
 --- !u!1 &398772052
 GameObject:
   m_ObjectHideFlags: 0
@@ -2005,20 +2005,6 @@ MonoBehaviour:
   autoRecenterRoll: 1
   HorizontalAndVerticalKey: 308
   RollKey: 306
---- !u!114 &779008871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 779008869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioDoor: {fileID: 267883491}
-  audioAngels: {fileID: 806011322}
-  fadeout: {fileID: 0}
 --- !u!1001 &786755046
 Prefab:
   m_ObjectHideFlags: 0
@@ -2648,7 +2634,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 89.980194, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1999811716}
-  m_RootOrder: 55
+  m_RootOrder: 35
 --- !u!1001 &915542572
 Prefab:
   m_ObjectHideFlags: 0
@@ -2786,6 +2772,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeTime: 2
   fadeColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &989232691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 989232689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDoor: {fileID: 267883491}
+  audioAngels: {fileID: 806011322}
+  fadeout: {fileID: 0}
 --- !u!1001 &1002150881
 Prefab:
   m_ObjectHideFlags: 0
@@ -3687,7 +3687,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1999811716}
-  m_RootOrder: 53
+  m_RootOrder: 34
 --- !u!4 &1298419754 stripped
 Transform:
   m_PrefabParentObject: {fileID: 475934, guid: bda433ec8e0dadc45bf4a46ad05ed197, type: 2}
@@ -4241,7 +4241,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 29.38, y: -49.3, z: 0}
   m_Children: []
   m_Father: {fileID: 1999811716}
-  m_RootOrder: 57
+  m_RootOrder: 55
 --- !u!1001 &1503920970
 Prefab:
   m_ObjectHideFlags: 0
@@ -4777,7 +4777,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 89.980194, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1999811716}
-  m_RootOrder: 85
+  m_RootOrder: 77
 --- !u!1001 &1712651659
 Prefab:
   m_ObjectHideFlags: 0
@@ -5840,7 +5840,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 89.980194, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1999811716}
-  m_RootOrder: 65
+  m_RootOrder: 59
 --- !u!4 &1932852976 stripped
 Transform:
   m_PrefabParentObject: {fileID: 481702, guid: 636cec67a1f3f154387f93c7b641a1e0, type: 2}
@@ -5929,6 +5929,8 @@ Transform:
   - {fileID: 1029597169}
   - {fileID: 1964970703}
   - {fileID: 553581393}
+  - {fileID: 1279981482}
+  - {fileID: 902358462}
   - {fileID: 1092256677}
   - {fileID: 526056038}
   - {fileID: 49998295}
@@ -5948,29 +5950,29 @@ Transform:
   - {fileID: 1259750333}
   - {fileID: 681044752}
   - {fileID: 415466542}
-  - {fileID: 1279981482}
-  - {fileID: 501592120}
-  - {fileID: 902358462}
-  - {fileID: 1976088934}
   - {fileID: 1500631522}
+  - {fileID: 501592120}
   - {fileID: 157319547}
+  - {fileID: 1976088934}
+  - {fileID: 1931588801}
   - {fileID: 399938335}
   - {fileID: 1220270758}
   - {fileID: 1234446914}
   - {fileID: 807029956}
   - {fileID: 1587552861}
   - {fileID: 701833084}
-  - {fileID: 1931588801}
   - {fileID: 1070127101}
   - {fileID: 811323889}
   - {fileID: 1788064310}
   - {fileID: 1664001201}
   - {fileID: 1329075350}
   - {fileID: 241458122}
+  - {fileID: 397902625}
   - {fileID: 1788744130}
   - {fileID: 627948242}
   - {fileID: 1413018037}
   - {fileID: 1775348207}
+  - {fileID: 1705588782}
   - {fileID: 2015814481}
   - {fileID: 365726994}
   - {fileID: 1679505912}
@@ -5979,13 +5981,11 @@ Transform:
   - {fileID: 1544926842}
   - {fileID: 865523420}
   - {fileID: 2102513792}
-  - {fileID: 397902625}
-  - {fileID: 1705588782}
   - {fileID: 578256313}
   - {fileID: 1972857471}
+  - {fileID: 1745083762}
   - {fileID: 448703049}
   - {fileID: 1209130399}
-  - {fileID: 1745083762}
   m_Father: {fileID: 0}
   m_RootOrder: 4
 --- !u!4 &2015814481 stripped

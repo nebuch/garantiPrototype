@@ -144,6 +144,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeTime: 2
   fadeColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1886531647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1886531645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioDoor: {fileID: 0}
+  audioAngels: {fileID: 0}
+  fadeout: {fileID: 0}
 --- !u!1001 &1957114692
 Prefab:
   m_ObjectHideFlags: 0
