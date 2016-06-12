@@ -936,7 +936,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioDoor: {fileID: 1832500794}
   audioAngels: {fileID: 8314193}
-  fadeout: {fileID: 0}
+  fadeout: {fileID: 460845276}
+--- !u!114 &460845276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460845267}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7358657a63d48fd4fb4554fdac997c2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTime: 2
+  fadeColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1 &468787626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,7 +1029,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &480692121
 RectTransform:
   m_ObjectHideFlags: 0

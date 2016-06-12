@@ -17,3 +17,5 @@ EditorBuildSettings:
     path: Assets/Scenes/UnlockedTurkey.unity
   - enabled: 1
     path: Assets/Scenes/Cinema.unity
+  - enabled: 1
+    path: Assets/Scenes/Bank.unity

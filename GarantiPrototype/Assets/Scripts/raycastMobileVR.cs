@@ -12,6 +12,7 @@ public class raycastMobileVR : MonoBehaviour {
 	public Transform audioAngels;
 	private bool doorHasBeenClicked = false;
     public ScreenFadeOut fadeout;
+    public ScreenFadeIn fadein;
 
 
 	void Start () 
@@ -43,6 +44,12 @@ public class raycastMobileVR : MonoBehaviour {
 				} // end of input click
 			} // end of if raycast hit a "door"
 		} // end of Raycast
+
+        if(SceneManager.GetActiveScene().name == "Intro")
+        {
+            fadein.GetComponent<ScreenFadeIn>().enabled = true;
+        }
+
 	} // end of Update()
 
     void StartFadeOut()
