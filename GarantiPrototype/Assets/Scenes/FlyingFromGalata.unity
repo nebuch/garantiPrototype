@@ -297,7 +297,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioDoor: {fileID: 1442033492}
   audioAngels: {fileID: 1828518684}
-  fadeout: {fileID: 0}
+  fadeout: {fileID: 1886531648}
+  fadein: {fileID: 1886531646}
 --- !u!114 &1886531648
 MonoBehaviour:
   m_ObjectHideFlags: 0

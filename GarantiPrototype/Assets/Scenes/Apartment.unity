@@ -2786,7 +2786,7 @@ MonoBehaviour:
   audioDoor: {fileID: 267883491}
   audioAngels: {fileID: 806011322}
   fadeout: {fileID: 989232692}
-  fadein: {fileID: 0}
+  fadein: {fileID: 989232690}
 --- !u!114 &989232692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4148,7 +4148,7 @@ GameObject:
   - 114: {fileID: 1488812572}
   - 114: {fileID: 1488812571}
   m_Layer: 0
-  m_Name: Canvas (1)
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

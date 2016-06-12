@@ -151,7 +151,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: -158.0679, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
 --- !u!1001 &103394212
 Prefab:
   m_ObjectHideFlags: 0
@@ -11119,7 +11119,7 @@ MonoBehaviour:
   audioDoor: {fileID: 1832500794}
   audioAngels: {fileID: 8314193}
   fadeout: {fileID: 460845276}
-  fadein: {fileID: 0}
+  fadein: {fileID: 460845274}
 --- !u!114 &460845276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11194,7 +11194,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
 --- !u!1 &480692120
 GameObject:
   m_ObjectHideFlags: 0
@@ -11349,7 +11349,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
 --- !u!1 &569865423
 GameObject:
   m_ObjectHideFlags: 0
@@ -12379,7 +12379,7 @@ Transform:
   - {fileID: 263095267}
   - {fileID: 1970396916}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
 --- !u!1 &1589301451
 GameObject:
   m_ObjectHideFlags: 0
@@ -12577,7 +12577,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
 --- !u!4 &1832500794 stripped
 Transform:
   m_PrefabParentObject: {fileID: 430044, guid: 7dd09ca301d964e62a8f03d44e5bdaef, type: 2}
@@ -12893,7 +12893,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
 --- !u!1 &1970396912
 GameObject:
   m_ObjectHideFlags: 0
@@ -13082,7 +13082,7 @@ RectTransform:
   - {fileID: 702952953}
   - {fileID: 1851542808}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -5.42, y: 0.34}

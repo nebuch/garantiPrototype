@@ -240,6 +240,7 @@ MonoBehaviour:
   audioDoor: {fileID: 0}
   audioAngels: {fileID: 0}
   fadeout: {fileID: 1886531648}
+  fadein: {fileID: 1886531646}
 --- !u!114 &1886531648
 MonoBehaviour:
   m_ObjectHideFlags: 0
