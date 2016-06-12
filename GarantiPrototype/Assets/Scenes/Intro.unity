@@ -125,6 +125,7 @@ GameObject:
   - 33: {fileID: 85567136}
   - 65: {fileID: 85567135}
   - 23: {fileID: 85567134}
+  - 114: {fileID: 85567137}
   m_Layer: 0
   m_Name: door
   m_TagString: Untagged
@@ -190,6 +191,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 85567132}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &85567137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 85567132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c6bc203d7bca4e3c86db09e626fa5d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 0.1
+  rend: {fileID: 0}
 --- !u!1 &176920119
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,6 +563,7 @@ GameObject:
   - 33: {fileID: 459391762}
   - 65: {fileID: 459391761}
   - 23: {fileID: 459391760}
+  - 114: {fileID: 459391763}
   m_Layer: 0
   m_Name: door
   m_TagString: Untagged
@@ -614,6 +629,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 459391758}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &459391763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 459391758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c6bc203d7bca4e3c86db09e626fa5d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 0.1
+  rend: {fileID: 0}
 --- !u!1 &460845267 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
@@ -1297,6 +1325,7 @@ GameObject:
   - 65: {fileID: 873079914}
   - 23: {fileID: 873079913}
   - 114: {fileID: 873079916}
+  - 114: {fileID: 873079917}
   m_Layer: 0
   m_Name: door
   m_TagString: Untagged
@@ -1374,6 +1403,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _toGoScene: Apartment
+--- !u!114 &873079917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 873079911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c6bc203d7bca4e3c86db09e626fa5d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 0.1
+  rend: {fileID: 0}
 --- !u!1 &888468097
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,6 +1587,7 @@ GameObject:
   - 33: {fileID: 1016799477}
   - 65: {fileID: 1016799476}
   - 23: {fileID: 1016799475}
+  - 114: {fileID: 1016799478}
   m_Layer: 0
   m_Name: door
   m_TagString: Untagged
@@ -1610,6 +1653,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1016799473}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1016799478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1016799473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c6bc203d7bca4e3c86db09e626fa5d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 0.1
+  rend: {fileID: 0}
 --- !u!1 &1031024292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1622,6 +1678,7 @@ GameObject:
   - 65: {fileID: 1031024294}
   - 23: {fileID: 1031024293}
   - 114: {fileID: 1031024297}
+  - 114: {fileID: 1031024298}
   m_Layer: 0
   m_Name: door
   m_TagString: Untagged
@@ -1699,6 +1756,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _toGoScene: FlyingFromGalata
+--- !u!114 &1031024298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031024292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c6bc203d7bca4e3c86db09e626fa5d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 0.1
+  rend: {fileID: 0}
 --- !u!1 &1089969192
 GameObject:
   m_ObjectHideFlags: 0

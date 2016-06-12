@@ -86,6 +86,10 @@ NavMeshSettings:
     cellSize: 0.16666666
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &8314193 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 416096, guid: 7dd09ca301d964e62a8f03d44e5bdaef, type: 2}
+  m_PrefabInternal: {fileID: 581393559}
 --- !u!1 &35063458
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +151,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: -158.0679, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!1 &161300632
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +344,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 178844060}
   m_LocalRotation: {x: 0, y: -0.17217301, z: 0, w: 0.9850668}
-  m_LocalPosition: {x: -22.995443, y: -12.372841, z: 4.2608995}
+  m_LocalPosition: {x: -9.2, y: -1.25, z: 5.7}
   m_LocalScale: {x: 3.63, y: 1.42, z: 1.69}
   m_LocalEulerAnglesHint: {x: 0, y: -19.8284, z: 0}
   m_Children: []
@@ -512,8 +516,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enableYaw: 1
-  autoRecenterPitch: 1
-  autoRecenterRoll: 1
+  autoRecenterPitch: 0
+  autoRecenterRoll: 0
   HorizontalAndVerticalKey: 308
   RollKey: 306
 --- !u!1001 &430584707
@@ -827,8 +831,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioDoor: {fileID: 0}
-  audioAngels: {fileID: 0}
+  audioDoor: {fileID: 1832500794}
+  audioAngels: {fileID: 8314193}
   fadeout: {fileID: 0}
 --- !u!1 &468787626
 GameObject:
@@ -891,7 +895,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!1 &480692120
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,7 +1050,35 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
+--- !u!1 &577828389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 2061208874}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 577828390}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &577828390
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 2061208874}
+  m_GameObject: {fileID: 577828389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
 --- !u!1001 &581393559
 Prefab:
   m_ObjectHideFlags: 0
@@ -1349,7 +1381,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &721342327
 Transform:
   m_ObjectHideFlags: 0
@@ -1364,7 +1396,7 @@ Transform:
   - {fileID: 1594424452}
   - {fileID: 1982147339}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!1001 &726966234
 Prefab:
   m_ObjectHideFlags: 0
@@ -2030,7 +2062,7 @@ Transform:
   - {fileID: 263095267}
   - {fileID: 1970396916}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!1 &1589301451
 GameObject:
   m_ObjectHideFlags: 0
@@ -2950,7 +2982,11 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
+--- !u!4 &1832500794 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 430044, guid: 7dd09ca301d964e62a8f03d44e5bdaef, type: 2}
+  m_PrefabInternal: {fileID: 581393559}
 --- !u!1 &1851542807
 GameObject:
   m_ObjectHideFlags: 0
@@ -3262,7 +3298,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1 &1970396912
 GameObject:
   m_ObjectHideFlags: 0
@@ -3438,7 +3474,7 @@ RectTransform:
   - {fileID: 702952953}
   - {fileID: 1851542808}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -5.42, y: 0.34}
