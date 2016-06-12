@@ -5,69 +5,43 @@ using UnityEngine.SceneManagement;
 public class raycastMobileVR : MonoBehaviour {
 
 	private RaycastHit hit;
-	public Transform fadeToWhite;
-	private string doorName;
+	//public Transform fadeToWhite;
+	//private string doorName;
 	private string _doorDestination;
 	public Transform audioDoor;
 	public Transform audioAngels;
 	private bool doorHasBeenClicked = false;
-
     public ScreenFadeOut fadeout;
 
-	// unused? 
-	//private float newHitTime;
-	//private Transform lastHit;
-	//private Renderer circleLoader;
-	
 
-	void Start () {	
-		fadeToWhite.GetComponent<Animator>().Stop();
-	} // end of Start()
+	void Start () 
+	{	
+		//fadeToWhite.GetComponent<Animator>().Stop();
+	}
 	
 	
-	void Update () {
-		Vector3 fwd = transform.TransformDirection(Vector3.forward);  // can this be made into a normal var?
-
-		if (Physics.Raycast(transform.position, fwd, out hit, 400)) {
-			/*
-			if (hit.transform != lastHit){
-				if (circleLoader) {
-					circleLoader.material.SetFloat("_Cutoff", 1); 
-				}
-				newHitTime = Time.time;
-				lastHit = hit.transform;
-				if (lastHit.Find ("circle loader")) {
-					circleLoader = hit.transform.Find ("circle loader").GetComponent<Renderer>();
-					circleLoader.material.SetFloat("_Cutoff", 1); 
-				}
-			}
-			*/
-
-			/*
-			if (hit.transform.tag == "ui") {
-				if (Time.time - newHitTime > 1) {
-					circleLoader.material.SetFloat("_Cutoff", 1); 
-				} else if (Time.time - newHitTime < 1){
-					circleLoader.material.SetFloat("_Cutoff", 1 - (Time.time - newHitTime)); 
-				} 
-			} 
-			*/
-
-			if (hit.transform.tag == "door" && doorHasBeenClicked == false) {
-				//doorName = hit.transform.name;
+	void Update () 
+	{
+		Vector3 fwd = transform.TransformDirection(Vector3.forward);
+		if (Physics.Raycast(transform.position, fwd, out hit, 400)) 
+		{
+			if (hit.transform.tag == "door" && doorHasBeenClicked == false) 
+			{
 				_doorDestination = hit.transform.gameObject.GetComponent<doorToGo>()._toGoScene;
-				if (Input.GetKey("space") || Input.GetMouseButton(0)) {
-					Debug.Log("CLICK! on DOOR");
+				if (Input.GetKey("space") || Input.GetMouseButton(0)) 
+				{
+					Debug.Log("click on door");
 					doorHasBeenClicked = true;
-					hit.transform.GetComponent<Animation>().Play();
-					//fadeToWhite.GetComponent<Animator>().Play("fade-to-white-3");  // does not work!
-					//fadeToWhite.GetComponent<Animator>().PlayInFixedTime("fade-to-white-3");  // also does not work
+					if (hit.transform.GetComponent<Animation>()) 
+					{
+						hit.transform.GetComponent<Animation>().Play();
+					}
 					audioDoor.GetComponent<AudioSource>().Play();
 					audioAngels.GetComponent<AudioSource>().Play();
-                    Invoke("StartFadeOut",1f);
+                    Invoke ("StartFadeOut",1f);
 					Invoke ("LoadScene", 4f);
-				}
-			}
+				} // end of input click
+			} // end of if raycast hit a "door"
 		} // end of Raycast
 	} // end of Update()
 
@@ -76,9 +50,8 @@ public class raycastMobileVR : MonoBehaviour {
         fadeout.GetComponent<ScreenFadeOut>().enabled = true;
     }
 
-	void LoadScene () {
-		
-			SceneManager.LoadScene(_doorDestination);
-
-	} // end of LoadScene()
+	void LoadScene () 
+	{
+		SceneManager.LoadScene(_doorDestination);
+	}
 }

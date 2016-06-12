@@ -114,10 +114,6 @@ Transform:
   - {fileID: 1890870764}
   m_Father: {fileID: 0}
   m_RootOrder: 14
---- !u!4 &63277321 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 459718, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
-  m_PrefabInternal: {fileID: 430584707}
 --- !u!1 &85567132
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,107 +495,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72ec666437db4ec5b2ffcacca80cb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeToWhite: {fileID: 361188611}
   audioDoor: {fileID: 1423409229}
   audioAngels: {fileID: 1542671918}
   fadeout: {fileID: 460845271}
---- !u!1 &361188610
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 361188611}
-  - 33: {fileID: 361188614}
-  - 23: {fileID: 361188612}
-  - 95: {fileID: 361188615}
-  - 111: {fileID: 361188616}
-  m_Layer: 0
-  m_Name: fade-to-white
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &361188611
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 361188610}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.64}
-  m_LocalScale: {x: 6.268441, y: 6.268439, z: 6.268439}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 63277321}
-  m_RootOrder: 6
---- !u!23 &361188612
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 361188610}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 3f0be7c52afc044ca8e771f8b426842d, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!33 &361188614
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 361188610}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!95 &361188615
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 361188610}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8c7a304797fd74a5da5f85603b6206ed, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!111 &361188616
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 361188610}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: e0449aeb63d3049a896a505d2c666e07, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: e0449aeb63d3049a896a505d2c666e07, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1001 &430584707
 Prefab:
   m_ObjectHideFlags: 0
@@ -1723,6 +1621,7 @@ GameObject:
   - 33: {fileID: 1031024295}
   - 65: {fileID: 1031024294}
   - 23: {fileID: 1031024293}
+  - 114: {fileID: 1031024297}
   m_Layer: 0
   m_Name: door
   m_TagString: Untagged
@@ -1788,6 +1687,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1935831912}
   m_RootOrder: 0
+--- !u!114 &1031024297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031024292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84adafb2fac250a41ba730a5f637365d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _toGoScene: FlyingFromGalata
 --- !u!1 &1089969192
 GameObject:
   m_ObjectHideFlags: 0
