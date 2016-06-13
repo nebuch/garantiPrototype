@@ -33,9 +33,9 @@ public class raycastMobileVR : MonoBehaviour {
 				{
 					Debug.Log("click on door");
 					doorHasBeenClicked = true;
-					if (hit.transform.GetComponent<Animation>()) 
+					if (hit.transform.GetComponent<Animator>()) 
 					{
-						hit.transform.GetComponent<Animation>().Play();
+						hit.transform.GetComponent<Animator>().Play("default");
 					}
 					audioDoor.GetComponent<AudioSource>().Play();
 					audioAngels.GetComponent<AudioSource>().Play();

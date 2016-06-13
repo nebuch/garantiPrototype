@@ -212,10 +212,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 176920120}
-  - 95: {fileID: 176920123}
   - 65: {fileID: 176920122}
-  - 111: {fileID: 176920121}
   - 114: {fileID: 176920124}
+  - 95: {fileID: 176920121}
   m_Layer: 0
   m_Name: Door To Apartment
   m_TagString: door
@@ -238,21 +237,23 @@ Transform:
   - {fileID: 1131036458}
   m_Father: {fileID: 1450858368}
   m_RootOrder: 7
---- !u!111 &176920121
-Animation:
+--- !u!95 &176920121
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 176920119}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 4203597db32764b209f0e8fc9d183fef, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 4203597db32764b209f0e8fc9d183fef, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5bca4b9efcd7dea42adaab5c085e188d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!65 &176920122
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -265,23 +266,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0.5, y: 0, z: 0}
---- !u!95 &176920123
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 176920119}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3c53eade2cbb44cb7922338064a383d3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &176920124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -943,10 +927,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 528804547}
-  - 95: {fileID: 528804551}
   - 65: {fileID: 528804550}
-  - 111: {fileID: 528804549}
   - 114: {fileID: 528804548}
+  - 95: {fileID: 528804549}
   m_Layer: 0
   m_Name: Door To Cinema
   m_TagString: door
@@ -981,21 +964,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _toGoScene: Cinema
---- !u!111 &528804549
-Animation:
+--- !u!95 &528804549
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 528804546}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 4203597db32764b209f0e8fc9d183fef, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 4203597db32764b209f0e8fc9d183fef, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9ae855f6cf075cf40b0a3f03d31465c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!65 &528804550
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1008,23 +993,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0.5, y: 0, z: 0}
---- !u!95 &528804551
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 528804546}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3c53eade2cbb44cb7922338064a383d3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &577564828
 Prefab:
   m_ObjectHideFlags: 0
@@ -1115,10 +1083,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 587982939}
-  - 95: {fileID: 587982943}
   - 65: {fileID: 587982942}
-  - 111: {fileID: 587982941}
   - 114: {fileID: 587982940}
+  - 95: {fileID: 587982941}
   m_Layer: 0
   m_Name: Door To Bank
   m_TagString: door
@@ -1132,10 +1099,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 587982938}
-  m_LocalRotation: {x: 0, y: -0.25881907, z: 0, w: 0.9659258}
+  m_LocalRotation: {x: 0, y: -0.27415156, z: 0, w: 0.96168655}
   m_LocalPosition: {x: -8.29, y: 0, z: 3.55}
   m_LocalScale: {x: 2.4999995, y: 5, z: 0.2}
-  m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 328.1771, z: 0}
   m_Children:
   - {fileID: 459391759}
   - {fileID: 736030533}
@@ -1153,21 +1120,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _toGoScene: Bank
---- !u!111 &587982941
-Animation:
+--- !u!95 &587982941
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 587982938}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 4203597db32764b209f0e8fc9d183fef, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 4203597db32764b209f0e8fc9d183fef, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ffe70df7a3d527a47bc4cdf99cd166d8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!65 &587982942
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1180,23 +1149,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0.5, y: 0, z: 0}
---- !u!95 &587982943
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 587982938}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3c53eade2cbb44cb7922338064a383d3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &608573031
 GameObject:
   m_ObjectHideFlags: 0
@@ -3081,10 +3033,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1935831912}
-  - 95: {fileID: 1935831913}
   - 65: {fileID: 1935831914}
-  - 111: {fileID: 1935831915}
   - 114: {fileID: 1935831916}
+  - 95: {fileID: 1935831913}
   m_Layer: 0
   m_Name: Door To Flying
   m_TagString: door
@@ -3114,9 +3065,9 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1935831911}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3c53eade2cbb44cb7922338064a383d3, type: 2}
+  m_Controller: {fileID: 9100000, guid: f421a6c14474b2e4db6b3d2e2902a0ab, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3136,21 +3087,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0.5, y: 0, z: 0}
---- !u!111 &1935831915
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1935831911}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 4203597db32764b209f0e8fc9d183fef, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 4203597db32764b209f0e8fc9d183fef, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &1935831916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3432,10 +3368,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2115561621}
-  - 95: {fileID: 2115561625}
   - 65: {fileID: 2115561624}
-  - 111: {fileID: 2115561623}
   - 114: {fileID: 2115561622}
+  - 95: {fileID: 2115561623}
   m_Layer: 0
   m_Name: Door To Garage
   m_TagString: door
@@ -3470,21 +3405,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _toGoScene: Garage
---- !u!111 &2115561623
-Animation:
+--- !u!95 &2115561623
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2115561620}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 4203597db32764b209f0e8fc9d183fef, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 4203597db32764b209f0e8fc9d183fef, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 992f47eaeebbfd84291f5da0b519ca2f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!65 &2115561624
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3497,23 +3434,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0.5, y: 0, z: 0}
---- !u!95 &2115561625
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2115561620}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3c53eade2cbb44cb7922338064a383d3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2115893227
 GameObject:
   m_ObjectHideFlags: 0
